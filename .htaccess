@@ -1,0 +1,6 @@
+# htaccess
+RewriteEngine On
+RewriteCond %{HTTP_HOST} diap.art.ccny.cuny.edu [NC]
+RewriteRule ^(.*)$ http://diap-mfa.us$1 [R=302]
+RewriteCond %{HTTP_HOST} art.ccny.cuny.edu [NC]
+RewriteRule ^(.*)$ https://art-at-ccny.com/$1 [R=302]

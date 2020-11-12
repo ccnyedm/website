@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta charset="utf-8&quot;">
+<title>Electronic Design and Multimedia | The Robinson Center | CCNY</title>
+<meta name="keywords" content="electronic design and media, ccny design, the robinson center">
+<meta name="copyright" content="Copyright 2010, City College of New York">
+<meta name="description" content="The Robinson Center Electronic Design and Multimedia is part of CCNY's humanities department.">
+  
+<link href="Electronic%20Design%20and%20Multimedia%20%7C%20The%20Robinson%20Center%20%7C%20CCNY_files/main.css" rel="stylesheet">
+<link href="Electronic%20Design%20and%20Multimedia%20%7C%20The%20Robinson%20Center%20%7C%20CCNY_files/lab.css" rel="stylesheet">
+<link rel="stylesheet" href="Electronic%20Design%20and%20Multimedia%20%7C%20The%20Robinson%20Center%20%7C%20CCNY_files/slimbox2.css" media="screen">
+
+<script src="Electronic%20Design%20and%20Multimedia%20%7C%20The%20Robinson%20Center%20%7C%20CCNY_files/jquery-1.js"></script>
+<script src="Electronic%20Design%20and%20Multimedia%20%7C%20The%20Robinson%20Center%20%7C%20CCNY_files/smoothscroll.js"></script>
+<script src="Electronic%20Design%20and%20Multimedia%20%7C%20The%20Robinson%20Center%20%7C%20CCNY_files/slimbox2.js"></script>
+
+<style>
+table { 
+	width:100%; 
+	margin: 2.5em auto;
+}
+
+table.tableizer-table {
+	font-size: 12px;
+} 
+.tableizer-table td {
+	padding: 4px;
+	margin: 3px;
+}
+
+.tableizer-table th {
+	background-color: #104E8B; 
+	color: #FFF;
+	font-weight: bold;
+}
+
+table, th, td {
+	border: 1px black solid;
+	border-collapse:collapse;}
+
+.tableizer-firstrow th{
+	padding: .5em .5em;
+	background: darkred;
+}
+
+td {vertical-align:top;}
+
+.bolded {font-weight: bold; 
+	color: #000; letter-spacing: normal;}
+.boldedred {font-weight: bold; 
+	color: darkred;}
+
+.stripe {background: lightyellow;}
+
+.boldruleabove {border-top: solid black .3em;}
+
+a:link {color: red;}
+a:visited {color: red;}
+</style>
+<style type="text/css">.clear { /* generic container (i.e. div) for floating buttons */
+
+	overflow: hidden !important;
+
+	width: 100% !important;
+
+}
+
+
+
+a.ultimatebutton {
+
+	background: transparent url('chrome://ultimate/skin/ultimate_normal.png') no-repeat !important;
+
+	color: #444 !important;
+
+	display: block !important;
+
+	float: left !important;
+
+	font: normal 12px arial, sans-serif !important;
+
+	height: 32px !important;
+
+	width: 110px !important;
+
+}
+
+
+a.ultimateDeleteButton {
+	background: transparent url('chrome://ultimate/skin/delete_button.png') no-repeat !important;
+	color: #444 !important;
+	display: block !important;
+	float: left !important;
+	font: normal 12px arial, sans-serif !important;
+	height:32px !important;
+	width: 34px !important;
+}
+
+
+
+#myultimatebem {
+
+	margin: 0 !important;
+
+	padding: 0 !important;
+
+	z-index: 30 !important;
+
+}
+
+
+
+#myultimatebem li {
+
+	margin: 0;
+
+	padding: 0;
+
+	list-style: none;
+
+	float: left;
+
+	font: bold 11px arial
+
+}
+
+
+
+#myultimatebem div {
+
+	position: absolute;
+
+	top: 31px;
+
+	width: 109px;
+
+	visibility: hidden;
+
+	margin: 0;
+
+	padding: 0;
+
+	background: #9CC02B;
+
+	border: 1px solid #4C4C4C !important
+
+}
+
+
+
+#myultimatebem div a {
+
+	position: relative !important;
+
+	display: block !important;
+
+	margin: 0 !important;
+
+	padding: 5px 10px !important;
+
+	width: auto;
+
+	white-space: nowrap !important;
+
+	text-align: center !important;
+
+	text-decoration: none !important;
+
+	background: #000000 !important;
+
+	color: #FFFFFF !important;
+
+	font: 12px arial, sans-serif !important
+
+}
+
+
+
+#myultimatebem div a:hover {
+
+	background: rgb(135,10,10) !important;
+
+	color: #FFFFFF !important
+
+}</style><style type="text/css" charset="utf-8">/* See license.txt for terms of usage */
+
+/** reset styling **/
+
+.firebugResetStyles {
+
+    z-index: 2147483646 !important;
+
+    top: 0 !important;
+
+    left: 0 !important;
+
+    display: block !important;
+
+    border: 0 none !important;
+
+    margin: 0 !important;
+
+    padding: 0 !important;
+
+    outline: 0 !important;
+
+    min-width: 0 !important;
+
+    max-width: none !important;
+
+    min-height: 0 !important;
+
+    max-height: none !important;
+
+    position: fixed !important;
+
+    transform: rotate(0deg) !important;
+
+    transform-origin: 50% 50% !important;
+
+    border-radius: 0 !important;
+
+    box-shadow: none !important;
+
+    background: transparent none !important;
+
+    pointer-events: none !important;
+
+    white-space: normal !important;
+
+}
+
+
+
+.firebugBlockBackgroundColor {
+
+    background-color: transparent !important;
+
+}
+
+
+
+.firebugResetStyles:before, .firebugResetStyles:after {
+
+    content: "" !important;
+
+}
+
+/**actual styling to be modified by firebug theme**/
+
+.firebugCanvas {
+
+    display: none !important;
+
+}
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.firebugLayoutBox {
+
+    width: auto !important;
+
+    position: static !important;
+
+}
+
+
+
+.firebugLayoutBoxOffset {
+
+    opacity: 0.8 !important;
+
+    position: fixed !important;
+
+}
+
+
+
+.firebugLayoutLine {
+
+    opacity: 0.4 !important;
+
+    background-color: #000000 !important;
+
+}
+
+
+
+.firebugLayoutLineLeft, .firebugLayoutLineRight {
+
+    width: 1px !important;
+
+    height: 100% !important;
+
+}
+
+
+
+.firebugLayoutLineTop, .firebugLayoutLineBottom {
+
+    width: 100% !important;
+
+    height: 1px !important;
+
+}
+
+
+
+.firebugLayoutLineTop {
+
+    margin-top: -1px !important;
+
+    border-top: 1px solid #999999 !important;
+
+}
+
+
+
+.firebugLayoutLineRight {
+
+    border-right: 1px solid #999999 !important;
+
+}
+
+
+
+.firebugLayoutLineBottom {
+
+    border-bottom: 1px solid #999999 !important;
+
+}
+
+
+
+.firebugLayoutLineLeft {
+
+    margin-left: -1px !important;
+
+    border-left: 1px solid #999999 !important;
+
+}
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.firebugLayoutBoxParent {
+
+    border-top: 0 none !important;
+
+    border-right: 1px dashed #E00 !important;
+
+    border-bottom: 1px dashed #E00 !important;
+
+    border-left: 0 none !important;
+
+    position: fixed !important;
+
+    width: auto !important;
+
+}
+
+
+
+.firebugRuler{
+
+    position: absolute !important;
+
+}
+
+
+
+.firebugRulerH {
+
+    top: -15px !important;
+
+    left: 0 !important;
+
+    width: 100% !important;
+
+    height: 14px !important;
+
+    background: url("data:image/png,%89PNG%0D%0A%1A%0A%00%00%00%0DIHDR%00%00%13%88%00%00%00%0E%08%02%00%00%00L%25a%0A%00%00%00%04gAMA%00%00%D6%D8%D4OX2%00%00%00%19tEXtSoftware%00Adobe%20ImageReadyq%C9e%3C%00%00%04%F8IDATx%DA%EC%DD%D1n%E2%3A%00E%D1%80%F8%FF%EF%E2%AF2%95%D0D4%0E%C1%14%B0%8Fa-%E9%3E%CC%9C%87n%B9%81%A6W0%1C%A6i%9A%E7y%0As8%1CT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AATE9%FE%FCw%3E%9F%AF%2B%2F%BA%97%FDT%1D~K(%5C%9D%D5%EA%1B%5C%86%B5%A9%BDU%B5y%80%ED%AB*%03%FAV9%AB%E1%CEj%E7%82%EF%FB%18%BC%AEJ8%AB%FA'%D2%BEU9%D7U%ECc0%E1%A2r%5DynwVi%CFW%7F%BB%17%7Dy%EACU%CD%0E%F0%FA%3BX%FEbV%FEM%9B%2B%AD%BE%AA%E5%95v%AB%AA%E3E5%DCu%15rV9%07%B5%7F%B5w%FCm%BA%BE%AA%FBY%3D%14%F0%EE%C7%60%0EU%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5JU%88%D3%F5%1F%AE%DF%3B%1B%F2%3E%DAUCNa%F92%D02%AC%7Dm%F9%3A%D4%F2%8B6%AE*%BF%5C%C2Ym~9g5%D0Y%95%17%7C%C8c%B0%7C%18%26%9CU%CD%13i%F7%AA%90%B3Z%7D%95%B4%C7%60%E6E%B5%BC%05%B4%FBY%95U%9E%DB%FD%1C%FC%E0%9F%83%7F%BE%17%7DkjMU%E3%03%AC%7CWj%DF%83%9An%BCG%AE%F1%95%96yQ%0Dq%5Dy%00%3Et%B5'%FC6%5DS%95pV%95%01%81%FF'%07%00%00%00%00%00%00%00%00%00%F8x%C7%F0%BE%9COp%5D%C9%7C%AD%E7%E6%EBV%FB%1E%E0(%07%E5%AC%C6%3A%ABi%9C%8F%C6%0E9%AB%C0'%D2%8E%9F%F99%D0E%B5%99%14%F5%0D%CD%7F%24%C6%DEH%B8%E9rV%DFs%DB%D0%F7%00k%FE%1D%84%84%83J%B8%E3%BA%FB%EF%20%84%1C%D7%AD%B0%8E%D7U%C8Y%05%1E%D4t%EF%AD%95Q%BF8w%BF%E9%0A%BF%EB%03%00%00%00%00%00%00%00%00%00%B8vJ%8E%BB%F5%B1u%8Cx%80%E1o%5E%CA9%AB%CB%CB%8E%03%DF%1D%B7T%25%9C%D5(%EFJM8%AB%CC'%D2%B2*%A4s%E7c6%FB%3E%FA%A2%1E%80~%0E%3E%DA%10x%5D%95Uig%15u%15%ED%7C%14%B6%87%A1%3B%FCo8%A8%D8o%D3%ADO%01%EDx%83%1A~%1B%9FpP%A3%DC%C6'%9C%95gK%00%00%00%00%00%00%00%00%00%20%D9%C9%11%D0%C0%40%AF%3F%EE%EE%92%94%D6%16X%B5%BCMH%15%2F%BF%D4%A7%C87%F1%8E%F2%81%AE%AAvzr%DA2%ABV%17%7C%E63%83%E7I%DC%C6%0Bs%1B%EF6%1E%00%00%00%00%00%00%00%00%00%80cr%9CW%FF%7F%C6%01%0E%F1%CE%A5%84%B3%CA%BC%E0%CB%AA%84%CE%F9%BF)%EC%13%08WU%AE%AB%B1%AE%2BO%EC%8E%CBYe%FE%8CN%ABr%5Dy%60~%CFA%0D%F4%AE%D4%BE%C75%CA%EDVB%EA(%B7%F1%09g%E5%D9%12%00%00%00%00%00%00%00%00%00H%F6%EB%13S%E7y%5E%5E%FB%98%F0%22%D1%B2'%A7%F0%92%B1%BC%24z3%AC%7Dm%60%D5%92%B4%7CEUO%5E%F0%AA*%3BU%B9%AE%3E%A0j%94%07%A0%C7%A0%AB%FD%B5%3F%A0%F7%03T%3Dy%D7%F7%D6%D4%C0%AAU%D2%E6%DFt%3F%A8%CC%AA%F2%86%B9%D7%F5%1F%18%E6%01%F8%CC%D5%9E%F0%F3z%88%AA%90%EF%20%00%00%00%00%00%00%00%00%00%C0%A6%D3%EA%CFi%AFb%2C%7BB%0A%2B%C3%1A%D7%06V%D5%07%A8r%5D%3D%D9%A6%CAu%F5%25%CF%A2%99%97zNX%60%95%AB%5DUZ%D5%FBR%03%AB%1C%D4k%9F%3F%BB%5C%FF%81a%AE%AB'%7F%F3%EA%FE%F3z%94%AA%D8%DF%5B%01%00%00%00%00%00%00%00%00%00%8E%FB%F3%F2%B1%1B%8DWU%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*UiU%C7%BBe%E7%F3%B9%CB%AAJ%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5*%AAj%FD%C6%D4%5Eo%90%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5%86%AF%1B%9F%98%DA%EBm%BBV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%AD%D6%E4%F58%01%00%00%00%00%00%00%00%00%00%00%00%00%00%40%85%7F%02%0C%008%C2%D0H%16j%8FX%00%00%00%00IEND%AEB%60%82") repeat-x !important;
+
+    border-top: 1px solid #BBBBBB !important;
+
+    border-right: 1px dashed #BBBBBB !important;
+
+    border-bottom: 1px solid #000000 !important;
+
+}
+
+
+
+.firebugRulerV {
+
+    top: 0 !important;
+
+    left: -15px !important;
+
+    width: 14px !important;
+
+    height: 100% !important;
+
+    background: url("data:image/png,%89PNG%0D%0A%1A%0A%00%00%00%0DIHDR%00%00%00%0E%00%00%13%88%08%02%00%00%00%0E%F5%CB%10%00%00%00%04gAMA%00%00%D6%D8%D4OX2%00%00%00%19tEXtSoftware%00Adobe%20ImageReadyq%C9e%3C%00%00%06~IDATx%DA%EC%DD%D1v%A20%14%40Qt%F1%FF%FF%E4%97%D9%07%3BT%19%92%DC%40(%90%EEy%9A5%CB%B6%E8%F6%9Ac%A4%CC0%84%FF%DC%9E%CF%E7%E3%F1%88%DE4%F8%5D%C7%9F%2F%BA%DD%5E%7FI%7D%F18%DDn%BA%C5%FB%DF%97%BFk%F2%10%FF%FD%B4%F2M%A7%FB%FD%FD%B3%22%07p%8F%3F%AE%E3%F4S%8A%8F%40%EEq%9D%BE8D%F0%0EY%A1Uq%B7%EA%1F%81%88V%E8X%3F%B4%CEy%B7h%D1%A2E%EBohU%FC%D9%AF2fO%8BBeD%BE%F7X%0C%97%A4%D6b7%2Ck%A5%12%E3%9B%60v%B7r%C7%1AI%8C%BD%2B%23r%00c0%B2v%9B%AD%CA%26%0C%1Ek%05A%FD%93%D0%2B%A1u%8B%16-%95q%5Ce%DCSO%8E%E4M%23%8B%F7%C2%FE%40%BB%BD%8C%FC%8A%B5V%EBu%40%F9%3B%A72%FA%AE%8C%D4%01%CC%B5%DA%13%9CB%AB%E2I%18%24%B0n%A9%0CZ*Ce%9C%A22%8E%D8NJ%1E%EB%FF%8F%AE%CAP%19*%C3%BAEKe%AC%D1%AAX%8C*%DEH%8F%C5W%A1e%AD%D4%B7%5C%5B%19%C5%DB%0D%EF%9F%19%1D%7B%5E%86%BD%0C%95%A12%AC%5B*%83%96%CAP%19%F62T%86%CAP%19*%83%96%CA%B8Xe%BC%FE)T%19%A1%17xg%7F%DA%CBP%19*%C3%BA%A52T%86%CAP%19%F62T%86%CA%B0n%A9%0CZ%1DV%C6%3D%F3%FCH%DE%B4%B8~%7F%5CZc%F1%D6%1F%AF%84%F9%0F6%E6%EBVt9%0E~%BEr%AF%23%B0%97%A12T%86%CAP%19%B4T%86%CA%B8Re%D8%CBP%19*%C3%BA%A52huX%19%AE%CA%E5%BC%0C%7B%19*CeX%B7h%A9%0C%95%E1%BC%0C%7B%19*CeX%B7T%06%AD%CB%5E%95%2B%BF.%8F%C5%97%D5%E4%7B%EE%82%D6%FB%CF-%9C%FD%B9%CF%3By%7B%19%F62T%86%CA%B0n%D1R%19*%A3%D3%CA%B0%97%A12T%86uKe%D0%EA%B02*%3F1%99%5DB%2B%A4%B5%F8%3A%7C%BA%2B%8Co%7D%5C%EDe%A8%0C%95a%DDR%19%B4T%C66%82fA%B2%ED%DA%9FC%FC%17GZ%06%C9%E1%B3%E5%2C%1A%9FoiB%EB%96%CA%A0%D5qe4%7B%7D%FD%85%F7%5B%ED_%E0s%07%F0k%951%ECr%0D%B5C%D7-g%D1%A8%0C%EB%96%CA%A0%A52T%C6)*%C3%5E%86%CAP%19%D6-%95A%EB*%95q%F8%BB%E3%F9%AB%F6%E21%ACZ%B7%22%B7%9B%3F%02%85%CB%A2%5B%B7%BA%5E%B7%9C%97%E1%BC%0C%EB%16-%95%A12z%AC%0C%BFc%A22T%86uKe%D0%EA%B02V%DD%AD%8A%2B%8CWhe%5E%AF%CF%F5%3B%26%CE%CBh%5C%19%CE%CB%B0%F3%A4%095%A1%CAP%19*Ce%A8%0C%3BO*Ce%A8%0C%95%A12%3A%AD%8C%0A%82%7B%F0v%1F%2FD%A9%5B%9F%EE%EA%26%AF%03%CA%DF9%7B%19*Ce%A8%0C%95%A12T%86%CA%B8Ze%D8%CBP%19*Ce%A8%0C%95%D1ae%EC%F7%89I%E1%B4%D7M%D7P%8BjU%5C%BB%3E%F2%20%D8%CBP%19*Ce%A8%0C%95%A12T%C6%D5*%C3%5E%86%CAP%19*Ce%B4O%07%7B%F0W%7Bw%1C%7C%1A%8C%B3%3B%D1%EE%AA%5C%D6-%EBV%83%80%5E%D0%CA%10%5CU%2BD%E07YU%86%CAP%19*%E3%9A%95%91%D9%A0%C8%AD%5B%EDv%9E%82%FFKOee%E4%8FUe%A8%0C%95%A12T%C6%1F%A9%8C%C8%3D%5B%A5%15%FD%14%22r%E7B%9F%17l%F8%BF%ED%EAf%2B%7F%CF%ECe%D8%CBP%19*Ce%A8%0C%95%E1%93~%7B%19%F62T%86%CAP%19*Ce%A8%0C%E7%13%DA%CBP%19*Ce%A8%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4h%A9%0C%B3E%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4h%A9%0C%B3E%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4%AE%A4%F5%25%C0%00%DE%BF%5C'%0F%DA%B8q%00%00%00%00IEND%AEB%60%82") repeat-y !important;
+
+    border-left: 1px solid #BBBBBB !important;
+
+    border-right: 1px solid #000000 !important;
+
+    border-bottom: 1px dashed #BBBBBB !important;
+
+}
+
+
+
+.overflowRulerX > .firebugRulerV {
+
+    left: 0 !important;
+
+}
+
+
+
+.overflowRulerY > .firebugRulerH {
+
+    top: 0 !important;
+
+}
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.fbProxyElement {
+
+    position: fixed !important;
+
+    pointer-events: auto !important;
+
+}
+
+</style></head>
+
+<body>
+<!--Container--> <div id="container">
+<a name="top" id="top"></a>
+<div class="border"></div>
+
+<!--Header-->
+<a href="http://edm.arts.ccny.cuny.edu/edm/index.html"><div id="logo">
+<h1>EDM, Electronic Design and Multimedia</h1></div></a>
+
+<div id="sub-header"><h2>The Robinson Center for Graphic Arts and Communication Design<br> at Art Department CCNY</h2></div>
+
+<div id="deadline">
+<span class="fall">FEB.15</span> FALL DEADLINE 
+<span class="spring">OCT.1</span> SPRING DEADLINE<br>
+<span class="download"><a href="http://edm.arts.ccny.cuny.edu/edm/pdfs/bfa_application.pdf">B.F.A. APPLICATION</a></span> DOWNLOAD</div>
+<!--Header-->
+
+<!--Menu-->
+<div id="nav">
+<ul><li><a href="http://edm.arts.ccny.cuny.edu/edm/index.html">Home</a></li>
+<li><a href="http://edm.arts.ccny.cuny.edu/edm/about.html">About Us</a></li>
+<li><a href="http://edm.arts.ccny.cuny.edu/edm/admissions.html">Admissions</a></li>
+<li><a href="http://edm.arts.ccny.cuny.edu/edm/courses.html">Courses</a></li>
+<li><a href="http://edm.arts.ccny.cuny.edu/edm/students.html">Students</a></li>
+<li><a href="http://edm.arts.ccny.cuny.edu/edm/faculty.html">Faculty</a></li>
+<li><a href="http://edm.arts.ccny.cuny.edu/edm/advising.html">Advising</a></li>
+<li><a href="http://edm.arts.ccny.cuny.edu/edm/gallery.html">Gallery</a></li>
+<li class="more-links"><a class="linksplus" href="#more-links">+</a></li></ul>
+</div> 
+<!--Menu-->
+
+<span class="separator-light">LAB</span>
+
+<!-- Lab -->
+<h3>EDM Computer Labs</h3>
+
+<h2>DOC Equipment Check-out</h2>
+
+<p class="doublespacebefore bold doublespaceafter">
+The equipment below is available for checkout by students in EDM and DIAP courses.</p>
+
+<span class="bold">Equipment Check-out:</span> students have access to 
+many digital video cameras and several digital still cameras, and may 
+borrow equipment necessary for assignments like wacom tablets and 
+portable sound systems. 
+<br><br>
+
+See our  <span class="bold"><a href="http://edm.arts.ccny.cuny.edu/edm/pdfs/checkout_policies.pdf" target="_blank"> equipment check-out policies</a></span>, 
+<span class="bold"><a href="http://edm.arts.ccny.cuny.edu/edm/pdfs/equipment_checkout_edit" target="_blank"> sign and return the check-out form</a></span> and  
+<span class="bold"><a href="#" target="_blank"> reserve equipment </a></span> here.<br>
+
+Please read the policies carefully. Checkout has clear time limits and 
+penalties for returning equipment late. Especially in the case of high 
+end or in-demand equipment or equipment where we only have one item, 
+there are restrictions on checking out the same item consecutive times. 
+Students keeping equipment out past the deadline or otherwise using 
+equipment inappropriately will have lab privileges withdrawn.<br><br>
+
+Additional information is on the <a href="http://edm.arts.ccny.cuny.edu/edm/lab.html" target="_blank">lab page.</a> Print Center information is at the <a href="http://edm.arts.ccny.cuny.edu/edm/print.html">Digital Output Center</a> page. <br><table class="tableizer-table">
+
+<tbody><tr class="tableizer-firstrow">
+  <th class="bolded">CATEGORY
+  </th><th class="bolded">EQUIPMENT/MODEL
+  </th><th class="bolded">DESCRIPTION
+  </th><th class="bolded">PERIPHERALS/ACCESSORIES
+  </th><th class="bolded">NUMBER
+ </th></tr>
+ 
+  <tr>
+  <td>audio</td>
+  <td>Logitech Speakers</td>
+  <td>Logitech LS11 Stereo Speaker System for CD, MP3, PC, or DVD. Plugs in via 3.5mm jack.</td>
+  <td>1) Speakers 2) Power Cord</td>
+  <td>2</td>
+ </tr>
+ 
+   <tr>
+  <td>audio/mp3</td>
+  <td>Roland Edirol Speakers</td>
+  <td>3" Active Speaker System</td>
+  <td>1) Speakers 2) Power Cord</td>
+  <td>1</td>
+ </tr>
+ 
+ <tr>
+  <td>audio</td>
+  <td>MusicStar Keyboard</td>
+  <td>MusicStar Reveal Keyboard with Function and Octave Keys - 37 Keys</td>
+  <td>1) Keyboard 2) Midi Cable 3)Power Supply Cable</td>
+  <td>1</td>
+ </tr>
+
+ <tr>
+  <td>audio</td>
+  <td>Voice Recorder</td>
+  <td>H2 Handy Recorder from Zoom.
+  Records audio.</td>
+  <td>1) Recorder 2) Mic Stand 3) USB
+  Cable 4) Supply 5) Hand Stand 6) Earbuds 7) Audio-to-TV wires</td>
+  <td>1</td>
+ </tr>
+ 
+ <tr>
+  <td>audio</td>
+  <td>Samson C01U</td>
+  <td>Studio microphone from Samson. Connects via USB to record audio to PC</td>
+  <td>1) Microphone w/ stand 2) USB Cable</td>
+  <td>1</td>
+ </tr>
+ 
+ <tr>
+  <td>audio</td>
+  <td>Audio-Tech Mic</td>
+  <td>Camera microphone from Audio-Technica. Connects via 3.5mm to camera.</td>
+  <td>1) Microphone with wind buffer and camera stand</td>
+  <td>1</td>
+ </tr>
+ 
+   <tr>
+  <td>audio/mp3</td>
+  <td>Aiptek</td>
+  <td>Aiptek MP3 Player / 720p HD 2GB
+  Hard Drive Digital Camcorder - Blue, Model V2T6</td>
+  <td>1) Camcorder 2) USB Cord 3)
+  Power Cord</td>
+  <td>4</td>
+ </tr>
+ 
+ <tr class="stripe">
+  <td>camera</td>
+  <td>Nikon D-800</td>
+  <td> 36.3 megapixel FX-format HD-SLR</td>
+  <td></td>
+  <td>1</td>
+ </tr>
+ 
+ 
+ <tr class="stripe">
+  <td>camera</td>
+  <td>Nikon D-90</td>
+  <td>12.3 MP DSLR Camera with HD Movie Mode</td>
+  <td>1) D-90 Camera body 2)Nikkor 55-200mm lens 3) 8 GB GF Card 4)USB 
+Cord 5) Audio Cable 6) Strap 7) Nikon Software Suite Disc 8) Camera
+  Instuctions Book 9) Lens Instruction Book</td>
+  <td>2</td>
+ </tr>
+ 
+ <tr class="stripe">
+  <td>camera</td>
+  <td>Nikon D-70</td>
+  <td>DIGITAL SLR CAMERA &amp; LENS E</td>
+  <td></td>
+  <td>3</td>
+ </tr>
+ 
+  <tr class="stripe">
+  <td>camera</td>
+  <td>Sony Cybershot</td>
+  <td>Sony Cybershot DSC-V1 Camera, 5MP, 4x Optical Zoom</td>
+  <td>1) Camera 2) Charger</td>
+  <td>2, 1 with flash</td>
+ </tr>
+ 
+ <tr>
+  <td>computer</td>
+  <td>Mac Mini</td>
+  <td>1.83/512mb/80gb</td>
+  <td>1) Mac Mini 2) Power Cord/Brick</td>
+  <td>4</td>
+ </tr>
+ 
+  <tr>
+  <td>computer</td>
+  <td>Mac Mini</td>
+  <td>1.83ghz core2/1gb ram/80gb</td>
+  <td>1) Mac Mini 2) Power Cord/Brick</td>
+  <td>2</td>
+ </tr>
+ 
+   <tr>
+  <td>computer</td>
+  <td>Mac Mini</td>
+  <td>1.83ghz core2/2gb ram/80gb</td>
+  <td>1) Mac Mini 2) Power Cord/Brick</td>
+  <td>1</td>
+ </tr>
+
+ 
+ <tr class="stripe">
+  <td>lighting</td>
+  <td>Botero</td>
+  <td>Lightbox, used to refract/buffer light from source.</td>
+  <td>1) Lightbox</td>
+  <td>2</td>
+ </tr>
+ 
+   <tr>
+  <td>lightbox</td>
+  <td>Tracing Lightbox</td>
+  <td>Tracing Lightbox. For drawing or photofilm.</td>
+  <td>1) Lightbox 2) Power Cable</td>
+  <td>2</td>
+ </tr>
+ 
+ <tr class="stripe">
+  <td>projector</td>
+  <td>NEC Projector</td>
+  <td>NEC NP510w Projector. Connects Via Composite, S-Video, DVI, VGA. LAN Support</td>
+  <td>1) Projector 2) Carrying Case 3) Power Cord 4) VGA Cable</td>
+  <td>2</td>
+ </tr>
+ 
+ <tr class="stripe">
+  <td>projector</td>
+  <td>Hitachi Projector</td>
+  <td>Hitachi CP-X4021N Projector. Connects via VGA, Composite, Component, USB, GBR, HDMI. LAN support.A</td>
+  <td>1) Projector 2) Power Cord 3) VGA Cable</td>
+  <td>2</td>
+ </tr>
+ 
+  <tr class="stripe">
+  <td>projector</td>
+  <td>InFocus Projector</td>
+  <td>InFocus IN2114 Desktop projector. </td>
+  <td>Connects via VGA/Serial/Composite output.</td>
+  <td>1</td>
+ </tr>
+ 
+ <tr class="stripe"><td>projector</td>
+  <td>Epson Projector</td>
+  <td>Epson EMP-83 Projector. Connects via VGA, composite, and S-Video. LAN Support.</td>
+  <td>1) Projector 2) Carrying Case 3) Power Cord 4) VGA Cable (some units missing VGA cable and/or power cord)</td>
+  <td>5</td>
+ </tr>
+ 
+ <tr class="stripe">
+  <td>projector</td>
+  <td>ViewSonic Projector</td>
+  <td>ViewSonic PJ759 Desktop Projector. Connects via VGA, Composite, Component, S-Video input. Supports Audio input via RCA</td>
+  <td>1) Projector 2) Carrying Case 3) Power Cord 4) Composite Cables (1 unit missing VGA cable)</td>
+  <td>2</td>
+ </tr>
+ 
+ <tr class="stripe">
+  <td>projector</td>
+  <td>Mitsubishi Projector</td>
+  <td>Mitsubishi LVP-X80U desktop projector. Connects via USB, Composite, S-Video and VGA</td>
+  <td>1) Projector (Bulb 5/10/06, no longer in use?)</td>
+  <td>1</td>
+ </tr>
+ 
+  <tr>
+  <td>tripod</td>
+  <td>Cull Tripod</td>
+  <td>Tripod with Swiveling and Rotating head</td>
+  <td>1) Tripod</td>
+  <td>1</td>
+ </tr>
+ 
+ <tr>
+  <td>tripod/stabilizer</td>
+  <td>Glide stabilizer</td>
+  <td>Freestanding Camera stabilizer with handle and multiple screw-in points.</td>
+  <td>1) stabilizer</td>
+  <td>3</td>
+ </tr>
+ 
+  <tr>
+  <td>tripod</td>
+  <td>Pearstone Tripod</td>
+  <td>Tripod</td>
+  <td>1) Tripod 2) Mounting Plate 3)Carrying Case</td>
+  <td>3, 1 missing mounting plate</td>
+ </tr>
+ 
+ <tr>
+  <td>tripod</td>
+  <td>Manfrotto Tripod</td>
+  <td>Tripod, Model 3001BN</td>
+  <td>1) Tripod</td>
+  <td>1</td>
+ </tr>
+
+ <tr class="stripe">
+  <td>video</td>
+  <td>Canon HD</td>
+  <td>Vixia HF 100 Camcorder, w/camera feat.</td>
+  <td>1) Camcorder 2) USB Cord 3)Straps 4) 8 GB GF Card 5) Charger 6) Extra Battery</td>
+  <td>1</td>
+ </tr>
+ 
+ <tr class="stripe">
+  <td>video</td>
+  <td>Canon HD</td>
+  <td>Vixia HF 200 Camcorder, 2.99 MP</td>
+  <td>1) Camcorder 2) USB Cable 3) Remote 4) 8 GB CF Card 5) Charger</td>
+  <td>6</td>
+ </tr>
+ 
+ <tr class="stripe">
+  <td>video</td>
+  <td>Flip Video</td>
+  <td>Flip Video - Mino HD</td>
+  <td>1) Flip Camera 2) Wall Charger</td>
+  <td>8</td>
+ </tr>
+
+ <tr class="stripe">
+  <td>video</td>
+  <td>Vado</td>
+  <td>Creative Labs VADO HD Pocket Video Camera, Model VF0580</td>
+  <td>1) Video Camera 2) USB Cord (Missing Power Cord)</td>
+  <td>5</td>
+ </tr>
+  
+ <tr class="stripe">
+  <td>video</td>
+  <td>Canon ZR850</td>
+  <td>Canon ZR850 Camera / 50x Optical, 1000x Digital Zoom / Via SD Card Memory and DV Tapes</td>
+  <td>1) Camcorder 2) USB Cord 3)FireWire Cord (Missing Power Cord)</td>
+  <td>2, 1 missing power cord</td>
+ </tr>
+ 
+ <tr class="stripe">
+  <td>video</td>
+  <td>Canon GL2</td>
+  <td>Canon GL2 Pro Camera with 1.7MP Camera feature. Records video on DV Tapes, captures images on SD Card. 20x
+  Optical/100x Digital Zoom</td>
+  <td>1) Camcorder 2) Battery
+  3)Unrelated Mini-USB Power Cord 4) 1GB SD Card 5) FireWire Cord (Missing Charger Power Cord)</td>
+  <td>1</td>
+ </tr>
+ 
+ <tr class="stripe">
+  <td>video</td>
+  <td>Canon GL1</td>
+  <td>Canon GL1 Pro Camera 3CCD. Records using DV Tape. 20x Optical/100x Digital Zoom</td>
+  <td>1) Camcorder 2) Battery 3) Extra Battery 4) Charger 5) Wall Battery ext. for charger (Missing USB Cord)</td>
+  <td>1</td>
+ </tr>
+ 
+ <tr class="stripe"> 
+  <td>video</td>
+  <td>Sony Handycam</td>
+  <td>Sony Cybershot Video Camera. Optical and 120x Digital Zoom. Has a Camera feature, nightshot capability.
+  Records by Memory Stick or DV Tape.</td>
+  <td>1) Camcorder 2) Battery 3) Neck Strap 4) Power Cord/Charger 5) Wide-Angle Lens 6) Lens Bag 7) Remote (Missing
+  USB Cord)</td>
+  <td>1</td>
+ </tr>
+
+<tr>
+  <td>tablets</td>
+  <td>Wacom Bamboo</td>
+	<td>Wacom Bamboo USB Tablet. Can use finger-touch or stylus pen</td>
+	<td>1) Tablet 2) Stylus 3) Installation CD</td>
+	<td>14</td>
+</tr>
+
+<tr>
+  <td>tablets</td>
+  <td>Wacom Bamboo Fun</td>
+	<td>Wacom Bamboo Fun USB Tablet. Stylus use only</td>
+	<td>1) Tablet 2) Stylus 3) USB Cable</td>
+	<td>5</td>
+</tr>
+</tbody></table>
+
+
+<div class="spacer"><span class="separator-light"></span></div>
+
+<div id="lab-staff"><h3>Lab Staff</h3>
+<h4 class="lab">Wendell (Skiter) Freeman</h4>
+<p class="lab"><span class="red">Senior Lab Manager</span><br>
+212-650-7403, CG 123<br>
+<a href="mailto:skiter@ccny.cuny.edu">skiter@ccny.cuny.edu</a></p>
+
+<h4 class="lab">Michael Conrader</h4>
+<p class="lab"><span class="red">Interim Lab Manager</span><br>
+<a href="mailto:nfoster@ccny.cuny.edu">mconrader@ccny.cuny.edu</a></p><br>
+</div>
+
+<h4 class="lab">EDM LAB ACCOUNT POLICY</h4>
+<p class="lab"><span class="lab-color">EDM Lab Accounts</span> are ONLY 
+for students currently enrolled in an EDM class, or for B.F.A. students 
+(even if not currently enrolled in an EDM class).</p>
+
+<h4 class="lab">Technical Assistance</h4>
+<p class="lab">Art Department Faculty and Staff must complete <span class="bold"><a href="#">this form</a></span> to request technical support from Skiter.</p>
+
+<h4 class="lab">Lab Schedule &amp; Hours</h4>
+<p class="lab">The lab is <span class="red">open M-Th, 9am-9pm, Friday 9am-8pm and Saturday 9am-5pm.</span> It is open regular hours on days when the College is open but there are no classes.</p>
+
+<!-- Lab -->
+
+<span class="separator">Links</span>
+
+<!-- Footer -->
+<div id="footer">
+<span class="address"><h4>Contact</h4><p>Amsterdam Avenue<br>
+at West 140th Street<br> <br>
+Compton-Goethals Hall<br>
+Rooms 118-124<br><br> 
+Phone: 212.650.7403<br>
+<a href="mailto:edesign@ccny.cuny.edu">edesign@ccny.cuny.edu</a></p></span>
+
+<span class="social"><h4>Connect</h4>
+<a href="http://www.flickr.com/photos/edmccny/" target="_blank"><span class="flickr">flickr</span></a>
+<a href="http://www.facebook.com/group.php?gid=2227562037" target="_blank"><span class="facebook">facebook</span></a>
+<a href="http://twitter.com/#%21/EDMCCNY" target="_blank"><span class="twitter">twitter</span></a>
+<a href="#"><span class="linkedin">linkedin</span></a>
+<a href="http://www.youtube.com/user/EdmCcnyVideo" target="_blank"><span class="youtube">youtube</span></a>
+<!-- <a href="#"><span class="rss">rss</span></a>-->
+<a href="http://maps.google.com/maps?q=Amsterdam+Avenue+At+West+140th+Street&amp;ie=UTF8&amp;hq=&amp;hnear=Amsterdam+Ave+%26+W+140th+St,+New+York&amp;gl=us&amp;z=16" target="_blank"><span class="map">map</span></a>
+</span>
+
+<span class="pdf"><h4>PDF Downloads</h4>
+<ul><li><a href="http://edm.arts.ccny.cuny.edu/edm/pdfs/bfa_application.pdf">B.F.A. Application</a></li>
+<li><a href="http://edm.arts.ccny.cuny.edu/edm/pdfs/prereqs_flowchart.pdf">EDM Course Prerequisites</a></li>
+<li><a href="http://edm.arts.ccny.cuny.edu/edm/pdfs/bfa_gradcheck.pdf">Grad Check/Program Sheet</a></li>
+<!--<li><a href="pdfs/thesis_proposal_info.pdf">B.F.A. Thesis Proposal</a></li>-->
+<li><a href="http://edm.arts.ccny.cuny.edu/edm/pdfs/internship_faq.pdf">Internship Info [Students]</a></li>
+<li><a href="http://edm.arts.ccny.cuny.edu/edm/pdfs/interns_foremployers.pdf">Internship Info [Employers]</a></li>
+<li><a href="http://edm.arts.ccny.cuny.edu/edm/pdfs/bmcc_articulation.pdf">BMCC Articulation [B.F.A. only]</a></li>
+<li><a href="http://edm.arts.ccny.cuny.edu/edm/pdfs/careertracks.pdf">Career tracks template</a></li>
+</ul>
+</span>
+
+<a name="more-links" id="more-links"></a><span class="links"><!--<h4><span class="plus">+</span> Links</h4>-->
+<ul>
+<li><a href="http://edm.arts.ccny.cuny.edu/edm/bfa.html">B.F.A. Students</a></li>
+<li><a href="http://edm.arts.ccny.cuny.edu/edm/ba.html">B.A. Students</a></li>
+<li><a href="http://edm.arts.ccny.cuny.edu/edm/edmclub.html">EDM Club</a></li>
+<li><a href="http://edm.arts.ccny.cuny.edu/edm/lab.html">EDM Lab</a></li>
+<li><a href="http://edm.arts.ccny.cuny.edu/edm/print.html">Print Center</a></li>
+<li><a href="http://edm.arts.ccny.cuny.edu/edm/checkout.html">Checkout</a></li>
+<li><a href="http://edm.arts.ccny.cuny.edu/edm/internships.html">Internships</a></li>
+<li><a href="http://edm.arts.ccny.cuny.edu/edm/hire.html">Hire a Student</a></li>
+<li><a href="http://edm.arts.ccny.cuny.edu/edm/alumni.html">Alumni</a></li>
+<li><a href="http://edm.arts.ccny.cuny.edu/edm/ccnylinks.html">CCNY Links</a></li>
+</ul>
+</span>
+</div>
+<!-- Footer -->
+
+<div id="mailing-list">
+<p><!-- // MAILCHIMP SUBSCRIBE CODE \\ -->
+<a href="http://eepurl.com/c_apQ" target="_blank">Subscribe to the <span class="bold">EDM mailing list</span></a>
+<!-- \\ MAILCHIMP SUBSCRIBE CODE // -->
+|
+<!-- // MAILCHIMP UNSUBSCRIBE CODE \\ -->
+<a href="http://cuny.us2.list-manage.com/unsubscribe?u=045bfb15e488723ee5f361c26&amp;id=795f4b662c" target="_blank">Unsubscribe</a>
+<!-- \\ MAILCHIMP UNSUBSCRIBE CODE // --></p>
+</div>
+
+<a href="#top"><div id="copy"><span class="copyrightsymb">© EDM CCNY</span></div></a>
+</div> <!--Container-->
+
+
+<div style="display: none;" id="lbOverlay"></div><div style="display: none;" id="lbCenter"><div id="lbImage"><div style="position: relative;"><a id="lbPrevLink" href="#"></a><a id="lbNextLink" href="#"></a></div></div></div><div style="display: none;" id="lbBottomContainer"><div id="lbBottom"><a id="lbCloseLink" href="#"></a><div id="lbCaption"></div><div id="lbNumber"></div><div style="clear: both;"></div></div></div></body></html>
