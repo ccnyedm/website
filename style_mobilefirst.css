@@ -164,6 +164,10 @@ figcaption {
   color : #08789B;
 }
 
+.bold-like-other-bold-workaround-for-old-bad-css{
+  font-family : 'Syntax-Black';
+}
+
 .bold {
   font-family : "Syntax-Bold";
 }
